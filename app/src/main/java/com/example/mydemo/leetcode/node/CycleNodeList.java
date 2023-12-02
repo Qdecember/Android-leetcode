@@ -30,6 +30,4 @@ public class CycleNodeList {
         return true;
     }
 
-
-
 }
