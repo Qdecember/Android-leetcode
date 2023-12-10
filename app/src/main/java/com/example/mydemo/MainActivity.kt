@@ -7,11 +7,13 @@ import android.widget.Button
 import com.example.mydemo.R
 import com.example.mydemo.basics.ScrollTestActivity
 import com.example.mydemo.render.SimpleRenderActivity
+import retrofit2.Retrofit
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val retrofit = Retrofit()
 
 
         val button = findViewById<Button>(R.id.simpleRender)
