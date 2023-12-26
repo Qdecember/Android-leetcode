@@ -8,18 +8,17 @@ import java.util.List;
  */
 public class InorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        inorder(root, res);
-        return res;
+        List<Integer> arr = new ArrayList<>();
+        inorder(arr, root);
+        return arr;
     }
 
-    public void inorder(TreeNode node, List res) {
-        if (node == null) {
+    private void inorder(List<Integer> arr, TreeNode root) {
+        if (root == null) {
             return;
         }
-
-        inorder(node.left, res);
-        res.add(node.val);
-        inorder(node.right, res);
+        inorder(arr,root.left);
+        arr.add(root.val);
+        inorder(arr, root.right);
     }
 }

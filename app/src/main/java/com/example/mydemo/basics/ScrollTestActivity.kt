@@ -1,11 +1,14 @@
 package com.example.mydemo.basics
 
+import android.app.IntentService
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mydemo.R
+import com.example.mydemo.basics.component.MyService
 
 
 class ScrollTestActivity : AppCompatActivity() {
@@ -31,5 +34,7 @@ class ScrollTestActivity : AppCompatActivity() {
 //
 //        leftButton.setOnClickListener(onButtonClickListener)
 //        rightButton.setOnClickListener(onButtonClickListener)
+
     }
+
 }

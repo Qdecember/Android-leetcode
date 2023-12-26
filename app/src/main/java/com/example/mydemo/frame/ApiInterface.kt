@@ -9,4 +9,7 @@ interface ApiInterface {
 
     @GET("users/{user}/repos")
     open fun listRepos(@Path("user") user: String?): Call<MutableList<String>>
+
+    @GET("user")
+    open fun getUser(@Path("userId") userId: String): Call<User>
 }

@@ -7,6 +7,7 @@ import android.view.SurfaceHolder
 import android.view.SurfaceView
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
+import java.util.concurrent.ConcurrentHashMap
 
 class SurfaceViewTemplate @JvmOverloads constructor(
     context: Context,
@@ -28,6 +29,8 @@ class SurfaceViewTemplate @JvmOverloads constructor(
         isFocusable = true
         keepScreenOn = true
         isFocusableInTouchMode = true
+
+
     }
 
     override fun surfaceCreated(holder: SurfaceHolder) {
